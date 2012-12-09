@@ -212,5 +212,5 @@ $(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
 
 PRODUCT_NAME := htc_lexikon
 PRODUCT_DEVICE := lexikon
-PRODUCT_MODEL := HTC Incredible 2
+PRODUCT_MODEL := HTC Merge
 PRODUCT_MANUFACTURER := HTC
