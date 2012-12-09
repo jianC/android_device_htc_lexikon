@@ -1,6 +1,6 @@
 key 116   POWER             WAKE_DROPPED
 key 107   ENDCALL           WAKE_DROPPED
-key 231   CALL							WAKE_DROPPED
+key 231   CALL		    WAKE_DROPPED
 
 # column 0
 key 100   ALT_RIGHT         WAKE_DROPPED
@@ -15,15 +15,14 @@ key 150   EXPLORER          WAKE_DROPPED
 # column 2
 key 28    ENTER             WAKE_DROPPED
 key 57    SPACE             WAKE_DROPPED
-key 16    Q									WAKE_DROPPED
-key 17    W									WAKE_DROPPED
+key 16    Q		    WAKE_DROPPED
+key 17    W		    WAKE_DROPPED
 key 18    E                 WAKE_DROPPED
 key 19    R                 WAKE_DROPPED
 key 20    T                 WAKE_DROPPED
 
 # column 3
-key 183   FUNC_1            WAKE_DROPPED
-key 214   QUECHAR           WAKE_DROPPED
+key 214   BUTTON_R2         WAKE_DROPPED
 key 21    Y                 WAKE_DROPPED
 key 22    U                 WAKE_DROPPED
 key 23    I                 WAKE_DROPPED
@@ -31,7 +30,6 @@ key 24    O                 WAKE_DROPPED
 key 25    P                 WAKE_DROPPED
 
 # column 4
-key 184   FUNC_2            WAKE_DROPPED
 key 52    PERIOD            WAKE_DROPPED
 key 30    A                 WAKE_DROPPED
 key 31    S                 WAKE_DROPPED
@@ -40,7 +38,6 @@ key 33    F                 WAKE_DROPPED
 key 34    G                 WAKE_DROPPED
 
 # column 5
-key 185   FUNC_3            WAKE_DROPPED
 key 51    COMMA             WAKE_DROPPED
 key 35    H                 WAKE_DROPPED
 key 36    J                 WAKE_DROPPED
@@ -50,7 +47,7 @@ key 44    Z                 WAKE_DROPPED
 
 # column 6
 key 217   SEARCH            WAKE_DROPPED
-key 215   AT            		WAKE_DROPPED
+key 215   AT                WAKE_DROPPED
 key 45    X                 WAKE_DROPPED
 key 46    C                 WAKE_DROPPED
 key 47    V                 WAKE_DROPPED
@@ -79,6 +76,10 @@ key 10    9
 key 11    0
 
 # not use in lexikon
+# key 183   FUNC_1            WAKE_DROPPED
+# key 184   FUNC_2            WAKE_DROPPED
+# key 185   FUNC_3            WAKE_DROPPED
+
 # key 12    MINUS             WAKE_DROPPED
 # key 13    EQUALS            WAKE_DROPPED
 # key 26    LEFT_BRACKET      WAKE_DROPPED
