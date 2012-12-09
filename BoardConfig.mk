@@ -29,9 +29,9 @@ USE_CAMERA_STUB := true
 -include device/htc/msm7x30-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/htc/vivow/BoardConfigVendor.mk
+-include vendor/htc/lexikon/BoardConfigVendor.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := vivow
+TARGET_BOOTLOADER_BOARD_NAME := lexikon
 
 # Use stock libril for now
 BOARD_USE_NEW_LIBRIL_HTC := true
@@ -43,13 +43,13 @@ BOARD_KERNEL_BASE := 0x05000000
 BOARD_KERNEL_PAGE_SIZE := 4096
 BOARD_PAGE_SIZE := 00001000
 
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := vivow
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := lexikon
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
 BOARD_HAVE_HTC_FFC := true
 BOARD_USE_REVERSE_FFC := true
 
-# Workaround for Vivow's broken overlay scaling
+# Workaround for lexikon's broken overlay scaling
 BOARD_OVERLAY_MINIFICATION_LIMIT := 2
 
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -59,8 +59,8 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 4194304
 BOARD_FLASH_BLOCK_SIZE := 262144
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
-TARGET_PREBUILT_KERNEL := device/htc/vivow/prebuilt/kernel
-TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/vivow/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := device/htc/lexikon/prebuilt/kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/lexikon/prebuilt/kernel
 
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true

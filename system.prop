@@ -1,5 +1,5 @@
 #
-# system.prop for vivow
+# system.prop for lexikon
 #
 ro.sf.lcd_density=240
 
@@ -62,9 +62,6 @@ ro.ril.def.agps.mode=2
 
 # For HSDPA low throughput
 ro.ril.disable.power.collapse=1
-
-# Vivow China NEL use
-ro.ril.update.vivow.acoustic=1
 
 # Properties of Scalado Denoise param.
 postprocess.iso_midband=400

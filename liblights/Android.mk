@@ -14,11 +14,11 @@
 
 LOCAL_PATH:= $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),vivow)
+ifeq ($(TARGET_DEVICE),lexikon)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := lights.vivow
+LOCAL_MODULE := lights.lexikon
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 

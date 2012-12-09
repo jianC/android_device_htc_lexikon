@@ -32,4 +32,4 @@ $(file) : $(LOCAL_PATH)/postrecoveryboot.sh | $(ACP)
 	$(transform-prebuilt-to-target)
 
 # include the non-open-source counterpart to this file
--include vendor/htc/vivow/AndroidBoardVendor.mk
+-include vendor/htc/lexikon/AndroidBoardVendor.mk
