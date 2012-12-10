@@ -118,10 +118,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/vold.fstab:system/etc/vold.fstab
 
-# media config xml file
-PRODUCT_COPY_FILES += \
-    device/htc/lexikon/media_profiles.xml:system/etc/media_profiles.xml
-
 # Kernel modules
 #PRODUCT_COPY_FILES += \
 
