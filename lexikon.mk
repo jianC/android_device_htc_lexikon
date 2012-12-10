@@ -79,14 +79,7 @@ PRODUCT_COPY_FILES += \
     device/htc/lexikon/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
     device/htc/lexikon/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
     device/htc/lexikon/keychars/lexikon-keypad.kcm.bin:system/usr/keychars/lexikon-keypad.kcm.bin \
-    device/htc/lexikon/keychars/lexikon-keypad-ara.kcm.bin:system/usr/keychars/lexikon-keypad-ara.kcm.bin \
-    device/htc/lexikon/keychars/lexikon-keypad-ell.kcm.bin:system/usr/keychars/lexikon-keypad-ell.kcm.bin \
-    device/htc/lexikon/keychars/lexikon-keypad-fra.kcm.bin:system/usr/keychars/lexikon-keypad-fra.kcm.bin \
-    device/htc/lexikon/keychars/lexikon-keypad-ger.kcm.bin:system/usr/keychars/lexikon-keypad-ger.kcm.bin \
-    device/htc/lexikon/keychars/lexikon-keypad-ita.kcm.bin:system/usr/keychars/lexikon-keypad-ita.kcm.bin \
-    device/htc/lexikon/keychars/lexikon-keypad-tur.kcm.bin:system/usr/keychars/lexikon-keypad-tur.kcm.bin \
-    device/htc/lexikon/keychars/lexikon-keypad-wwe-bopomo.kcm.bin:system/usr/keychars/lexikon-keypad-wwe-bopomo.kcm.bin \
-    device/htc/lexikon/keychars/lexikon-keypad-wwe.kcm.bin:system/usr/keychars/lexikon-keypad-wwe.kcm.bin
+    device/htc/lexikon/keychars/lexikon-keypad-v0.kcm.bin:system/usr/keychars/lexikon-keypad-v0.kcm.bin 
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
@@ -94,14 +87,7 @@ PRODUCT_COPY_FILES += \
     device/htc/lexikon/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
     device/htc/lexikon/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
     device/htc/lexikon/keylayout/lexikon-keypad.kl:system/usr/keylayout/lexikon-keypad.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad-ara.kl:system/usr/keylayout/lexikon-keypad-ara.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad-ell.kl:system/usr/keylayout/lexikon-keypad-ell.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad-fra.kl:system/usr/keylayout/lexikon-keypad-fra.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad-ger.kl:system/usr/keylayout/lexikon-keypad-ger.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad-ita.kl:system/usr/keylayout/lexikon-keypad-ita.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad-tur.kl:system/usr/keylayout/lexikon-keypad-tur.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad-wwe-bopomo.kl:system/usr/keylayout/lexikon-keypad-wwe-bopomo.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad-wwe.kl:system/usr/keylayout/lexikon-keypad-wwe.kl
+    device/htc/lexikon/keylayout/lexikon-keypad-v0.kl:system/usr/keylayout/lexikon-keypad-v0.kl
 
 # Firmware
 PRODUCT_COPY_FILES += \
