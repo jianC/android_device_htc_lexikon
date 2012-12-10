@@ -106,10 +106,11 @@ PRODUCT_COPY_FILES += \
 # Firmware
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
+    device/htc/lexikon/firmware/BCM4329B1_002.002.023.0511.0557.hcd:system/etc/firmware/BCM4329B1_002.002.023.0511.0557.hcd \
     device/htc/lexikon/firmware/default.acdb:system/etc/firmware/default.acdb \
-    device/htc/lexikon/firmware/default_mfg.acdb:system/etc/firmware/default_mfg.acdb \
     device/htc/lexikon/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
     device/htc/lexikon/firmware/default_org_nel.acdb:system/etc/firmware/default_org_nel.acdb \
+    device/htc/lexikon/firmware/mp2_dec_mc.fw:system/etc/firmware/mp2_dec_mc.fw \
     device/htc/lexikon/firmware/vidc_720p_command_control.fw:system/etc/firmware/vidc_720p_command_control.fw \
     device/htc/lexikon/firmware/vidc_720p_h263_dec_mc.fw:system/etc/firmware/vidc_720p_h263_dec_mc.fw \
     device/htc/lexikon/firmware/vidc_720p_h264_dec_mc.fw:system/etc/firmware/vidc_720p_h264_dec_mc.fw \
@@ -125,52 +126,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/dsp/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
     device/htc/lexikon/dsp/AdieHWCodec_NEL.csv:system/etc/AdieHWCodec_NEL.csv \
-    device/htc/lexikon/dsp/AIC3254_REG.csv:system/etc/AIC3254_REG.csv \
-    device/htc/lexikon/dsp/AIC3254_REG_DualMic.csv:system/etc/AIC3254_REG_DualMic.csv \
-    device/htc/lexikon/dsp/AIC3254_REG_DualMic_NEL.csv:system/etc/AIC3254_REG_DualMic_NEL.csv \
-    device/htc/lexikon/dsp/AIC3254_REG_DualMicXB.csv:system/etc/AIC3254_REG_DualMicXB.csv \
     device/htc/lexikon/dsp/AudioBTID.csv:system/etc/AudioBTID.csv \
-    device/htc/lexikon/dsp/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv \
-    device/htc/lexikon/dsp/TPA2051_CFG_NEL.csv:system/etc/TPA2051_CFG_NEL.csv \
-    device/htc/lexikon/dsp/CodecDSPID_BCLK.txt:system/etc/CodecDSPID_BCLK.txt \
-    device/htc/lexikon/dsp/CodecDSPID_NEL.txt:system/etc/CodecDSPID_NEL.txt \
-    device/htc/lexikon/dsp/CodecDSPID.txt:system/etc/CodecDSPID.txt \
-    device/htc/lexikon/dsp/CodecDSPID_WB.txt:system/etc/CodecDSPID_WB.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Bass_Booster.txt:system/etc/soundimage/Sound_Bass_Booster.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Blues.txt:system/etc/soundimage/Sound_Blues.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Classical.txt:system/etc/soundimage/Sound_Classical.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Country.txt:system/etc/soundimage/Sound_Country.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Jazz.txt:system/etc/soundimage/Sound_Jazz.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Latin.txt:system/etc/soundimage/Sound_Latin.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_New_Age.txt:system/etc/soundimage/Sound_New_Age.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Original_BCLK.txt:system/etc/soundimage/Sound_Original_BCLK.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Original_Recording_BCLK.txt:system/etc/soundimage/Sound_Original_Recording_BCLK.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Original_Recording.txt:system/etc/soundimage/Sound_Original_Recording.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Original_SPK_BCLK.txt:system/etc/soundimage/Sound_Original_SPK_BCLK.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Original_SPK.txt:system/etc/soundimage/Sound_Original_SPK.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Original.txt:system/etc/soundimage/Sound_Original.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Phone_Original_HP_BCLK.txt:system/etc/soundimage/Sound_Phone_Original_HP_BCLK.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Phone_Original_HP.txt:system/etc/soundimage/Sound_Phone_Original_HP.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Phone_Original_REC_BCLK.txt:system/etc/soundimage/Sound_Phone_Original_REC_BCLK.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Phone_Original_REC_NEL.txt:system/etc/soundimage/Sound_Phone_Original_REC_NEL.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Phone_Original_REC.txt:system/etc/soundimage/Sound_Phone_Original_REC.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Phone_Original_REC_WB.txt:system/etc/soundimage/Sound_Phone_Original_REC_WB.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Phone_Original_SPK_BCLK.txt:system/etc/soundimage/Sound_Phone_Original_SPK_BCLK.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Phone_Original_SPK.txt:system/etc/soundimage/Sound_Phone_Original_SPK.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Phone_Original_SPK_WB.txt:system/etc/soundimage/Sound_Phone_Original_SPK_WB.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Piano.txt:system/etc/soundimage/Sound_Piano.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Pop.txt:system/etc/soundimage/Sound_Pop.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_R_B.txt:system/etc/soundimage/Sound_R_B.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Recording.txt:system/etc/soundimage/Sound_Recording.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Rock.txt:system/etc/soundimage/Sound_Rock.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_SRS_A_HP.txt:system/etc/soundimage/Sound_SRS_A_HP.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_SRS_A_SPK.txt:system/etc/soundimage/Sound_SRS_A_SPK.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_SRS_V_HP.txt:system/etc/soundimage/Sound_SRS_V_HP.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_SRS_V_SPK.txt:system/etc/soundimage/Sound_SRS_V_SPK.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Treble_Booster.txt:system/etc/soundimage/Sound_Treble_Booster.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Vocal_Booster.txt:system/etc/soundimage/Sound_Vocal_Booster.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Rec_Landscape.txt:system/etc/soundimage/Sound_Rec_Landscape.txt \
-    device/htc/lexikon/dsp/soundimage/Sound_Rec_Portrait.txt:system/etc/soundimage/Sound_Rec_Portrait.txt
+    device/htc/lexikon/dsp/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv
  
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/vold.fstab:system/etc/vold.fstab
