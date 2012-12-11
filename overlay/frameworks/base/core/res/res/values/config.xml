@@ -41,15 +41,15 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-         <item>160</item>
-         <item>225</item>
-         <item>320</item>
-         <item>640</item>
-         <item>1280</item>
-         <item>2600</item>
-         <item>5800</item>
-         <item>8000</item>
-         <item>10240</item>
+        <item>11</item>
+        <item>41</item>
+        <item>91</item>
+        <item>161</item>
+        <item>226</item>
+        <item>321</item>
+        <item>641</item>
+        <item>1281</item>
+        <item>2601</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -57,15 +57,15 @@
          than the size of the config_autoBrightnessLevels array.
     -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>21</item>
-        <item>31</item>
-        <item>41</item>
-        <item>51</item>
-        <item>95</item>
-        <item>130</item>
-        <item>186</item>
-        <item>208</item>
-        <item>231</item>
+        <item>83</item>
+        <item>83</item>
+        <item>83</item>
+        <item>83</item>
+        <item>116</item>
+        <item>142</item>
+        <item>170</item>
+        <item>198</item>
+        <item>227</item>
         <item>255</item>
     </integer-array>
 
@@ -74,16 +74,16 @@
          than the size of the config_autoBrightnessLevels array.
     -->
     <integer-array name="config_autoBrightnessButtonBacklightValues">
-        <item>50</item>
-        <item>50</item>
-        <item>50</item>
-        <item>50</item>
-        <item>120</item>
-        <item>150</item>
-        <item>180</item>
-        <item>210</item>
-        <item>230</item>
         <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
     </integer-array>
 
     <!-- Array of output values for keyboard backlight corresponding to the LUX values
@@ -92,11 +92,11 @@
          Passion has no keyboard so all values are zero.
     -->
     <integer-array name="config_autoBrightnessKeyboardBacklightValues">
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
-        <item>0</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>-1</item>
         <item>0</item>
         <item>0</item>
         <item>0</item>
