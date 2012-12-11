@@ -44,9 +44,6 @@ BOARD_KERNEL_PAGE_SIZE := 4096
 
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := lexikon
 
-BOARD_HAVE_HTC_FFC := true
-BOARD_USE_REVERSE_FFC := true
-
 # Workaround for lexikon's broken overlay scaling
 BOARD_OVERLAY_MINIFICATION_LIMIT := 2
 
