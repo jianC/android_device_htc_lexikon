@@ -67,10 +67,13 @@ on fs
     chown system system /sys/class/leds/green/blink
     chown system system /sys/class/leds/amber/brightness
     chown system system /sys/class/leds/amber/blink
-    chown system system /sys/class/leds/button-backlight-portrait/brightness
-    chown system system /sys/class/leds/button-backlight-landscape/brightness
+    chown system system /sys/class/leds/button-backlight/brightness
     chown system system /sys/class/leds/lcd-backlight/brightness
+    chown system system /sys/class/leds/keyboard-backlight/brightness
+    chown system system /sys/class/leds/func/brightness
+    chown system system /sys/class/leds/caps/brightness
 
+    # flashlight
     chown system camera /sys/class/leds/flashlight/brightness
     chmod 0660          /sys/class/leds/flashlight/brightness
 
