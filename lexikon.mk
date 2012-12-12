@@ -106,13 +106,6 @@ PRODUCT_COPY_FILES += \
     device/htc/lexikon/firmware/vidc_720p_vc1_dec_mc.fw:system/etc/firmware/vidc_720p_vc1_dec_mc.fw \
     device/htc/lexikon/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
     device/htc/lexikon/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
-
-# Audio DSP Profiles
-PRODUCT_COPY_FILES += \
-    device/htc/lexikon/dsp/AdieHWCodec.csv:system/etc/AdieHWCodec.csv \
-    device/htc/lexikon/dsp/AdieHWCodec_NEL.csv:system/etc/AdieHWCodec_NEL.csv \
-    device/htc/lexikon/dsp/AudioBTID.csv:system/etc/AudioBTID.csv \
-    device/htc/lexikon/dsp/TPA2051_CFG.csv:system/etc/TPA2051_CFG.csv
  
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/vold.fstab:system/etc/vold.fstab
