@@ -34,8 +34,7 @@ USE_CAMERA_STUB := true
 TARGET_BOOTLOADER_BOARD_NAME := lexikon
 
 # Use stock libril for now
-BOARD_USE_NEW_LIBRIL_HTC := true
-BOARD_HAS_EXTRA_SYS_PROPS := true
+TARGET_PROVIDES_LIBRIL := vendor/htc/lexikon/proprietary/libril.so
 
 BOARD_KERNEL_CMDLINE := no_console_suspend=1
 BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE) msmsdcc_power_gpio=88
