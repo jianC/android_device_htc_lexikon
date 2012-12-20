@@ -9,6 +9,7 @@ debug.fb.rgb565=0
 ro.gsm.2nd_data_retry_config=max_retries=3, 2000, 2000, 2000
 
 rild.libpath=/system/lib/libhtc_ril.so
+rild.lib_ims_path=/system/lib/libims_ril.so
 
 # lexikon RF team request
 ro.ril.enable.dtm=1
@@ -26,6 +27,14 @@ ro.ril.wp.feature=1
 # Default network type.
 # 4 => CDMA mode preferred.
 ro.telephony.default_network=4
+ro.ril.enable.prl.recognition=1
+ro.telephony.ril.v3=datacall
+
+#device supports EHRPD
+ro.config.ehrpd=true
+
+#Welly_Fang_02/10/2011
+ro.htc.device.slot1 = RUIM
 
 # For Verizon data retry configuration
 ro.cdma.data_retry_config = max_retries=infinite,0,0,60000,120000,480000,900000
@@ -44,6 +53,10 @@ wifi.supplicant_scan_interval=15
 #Welly_Fang_01/05/2010
 ro.cdma.home.operator.numeric=310012
 ro.cdma.home.operator.alpha=Verizon
+
+#joyu:12/24/2010 CDMA temp solution
+persist.ril.cdmaDataCallUser = ctwap@mycdma.cn
+persist.ril.cdmaDatacallPasswd = vnet.mobi
 
 mobiledata.interfaces=rmnet0
 
