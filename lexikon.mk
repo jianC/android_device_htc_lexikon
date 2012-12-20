@@ -67,10 +67,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/lexikon/overlay
 
-# gsm config xml file
+# cdma config xml file
 PRODUCT_COPY_FILES += \
-    device/htc/lexikon/voicemail-conf.xml:system/etc/voicemail-conf.xml \
-    device/htc/lexikon/apns-conf.xml:system/etc/apns-conf.xml
+    device/htc/lexikon/voicemail-conf.xml:system/etc/voicemail-conf.xml
 
 PRODUCT_PACKAGES += \
     lights.lexikon \

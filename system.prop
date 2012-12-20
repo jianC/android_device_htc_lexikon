@@ -45,7 +45,6 @@ wifi.supplicant_scan_interval=15
 ro.cdma.home.operator.numeric=310012
 ro.cdma.home.operator.alpha=Verizon
 
-#mobiledata.interfaces=gannet0,rmnet0,rmnet1,rmnet2
 mobiledata.interfaces=rmnet0
 
 # The OpenGL ES API level that is natively supported by this device.
