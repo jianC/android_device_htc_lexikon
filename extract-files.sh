@@ -71,8 +71,7 @@ adb pull /system/lib/libril.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libcamera.so:obj/lib/libcamera.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libril.so:obj/lib/libril.so
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so
 
 # All the blobs necessary for lexikon
 PRODUCT_COPY_FILES += \\
@@ -104,7 +103,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libmmjpeg.so:/system/lib/libmmjpeg.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libhtc_ril.so:/system/lib/libhtc_ril.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libreference-ril.so:/system/lib/libreference-ril.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libril.so:/system/lib/libril.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libims_ril.so:/system/lib/libims_ril.so
 EOF
 
