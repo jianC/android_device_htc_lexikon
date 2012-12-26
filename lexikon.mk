@@ -40,12 +40,12 @@ $(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
 ## (3)  Finally, the least specific parts, i.e. the non-GSM-specific aspects
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.oem.ecclist=112,911 \
-    ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,120,122,110,119,995 \
+    ro.ril.oem.nosim.ecclist=110,112,911,000,08,999,118,119,120,122 \
     ro.ril.enable.a52=0 \
     ro.ril.enable.a53=1 \
-    ro.ril.def.agps.mode=6 \
-    ro.ril.enable.managed.roaming=1 \
-    ro.ril.emc.mode=2
+    ro.ril.gprsclass=10 \
+    ro.ril.disable.fd.plmn.prefix=23402,23410,23411 \
+    ro.ril.enable.sdr=0 \
     htc.audio.alt.enable=1 \
     htc.audio.hac.enable=1 \
     ro.com.google.clientidbase=android-htc \

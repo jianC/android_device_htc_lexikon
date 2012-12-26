@@ -28,24 +28,9 @@ on fs
 
     chmod 0664 /sys/module/pm/parameters/idle_sleep_mode
 
-    # for disabling IPv6 over mobile network.
-    write /proc/sys/net/ipv6/conf/rmnet0/disable_ipv6 1
-    write /proc/sys/net/ipv6/conf/rmnet1/disable_ipv6 1
-    write /proc/sys/net/ipv6/conf/rmnet2/disable_ipv6 1
-
     # for Flip to speaker
     chown radio radio /sys/class/htc_accelerometer/accelerometer/PhoneOnOffFlag
     chown radio radio /sys/class/htc_ecompass/ecompass/PhoneOnOffFlag
-
-    # for Optical sensors
-    chown system system /sys/class/optical_sensors/lightsensor/ls_adc
-    chown system system /sys/class/optical_sensors/lightsensor/ls_auto
-    chown system system /sys/class/optical_sensors/lightsensor/ls_kadc
-    chown system radio  /sys/class/optical_sensors/proximity/ps_adc
-    chown system system /sys/class/optical_sensors/proximity/ps_kadc
-    chmod 0666          /sys/class/optical_sensors/proximity/ps_kadc
-    chown system system /sys/class/optical_sensors/proximity/ps_led
-    chown system system /sys/class/optical_sensors/proximity/ps_test_mode
 
     # for charging function
     chown radio radio /sys/class/power_supply/battery/charger_control
@@ -129,6 +114,14 @@ service udhcpd /system/bin/udhcpd
 
 service rmt_storage /system/bin/rmt_storage /dev/block/mmcblk0p13 /dev/block/mmcblk0p14
     user root
+
+service qmuxd /system/bin/qmuxd
+
+service netmgrd /system/bin/netmgrd
+
+on property:ro.use_data_netmgrd=false
+    # netmgr not supported on specific target
+    stop netmgrd
 
 service htc_ebdlogd /system/bin/htc_ebdlogd -s -k -P 7
     user root
