@@ -39,11 +39,12 @@ net.tcp.buffersize.evdo_b=4094,87380,262144,4096,16384,262144
 ro.use_data_netmgrd=true
 persist.data_netmgrd_nint=8
 
-wifi.interface=eth0
-wifi.supplicant_scan_interval=15
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=
 
 #Welly_Fang_01/05/2010
 ro.cdma.home.operator.numeric = 310012
+#ro.cdma.home.operator.numeric = 311220 (US Cellular)
 ro.cdma.home.operator.alpha = Verizon
 
 mobiledata.interfaces=rmnet0
@@ -67,3 +68,10 @@ postprocess.denoise_level=5
 
 # Recording Audio Workaround
 ro.camera.sound.disabled=1
+
+# camera preview hack
+ro.camera.preview=true
+
+# USB Mount
+persist.sys.usb.config=mass_storage,adb
+persist.service.adb.enable=1

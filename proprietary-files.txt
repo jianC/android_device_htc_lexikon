@@ -1,0 +1,41 @@
+# Configuration files
+etc/AudioBTID.csv 
+etc/AdieHWCodec.csv
+etc/AdieHWCodec_NEL.csv
+etc/TPA2051_CFG.csv 
+etc/AudioBTID.csv
+
+# Executable files
+bin/akmd 
+bin/awb_camera 
+bin/bma150_usr
+bin/dmagent 
+bin/htc_ebdlogd 
+bin/logcat2 
+bin/lsc_camera 
+bin/rmt_storage 
+
+# Audio
+lib/libaudioalsa.so 
+lib/libhtc_acoustic.so 
+
+# Camera
+lib/libcamera.so 
+lib/liboemcamera.so
+
+# Graphics
+lib/egl/libEGL_adreno200.so 
+lib/egl/libGLESv1_CM_adreno200.so 
+lib/egl/libGLESv2_adreno200.so oi
+lib/egl/libq3dtools_adreno200.so 
+
+# Media libraries
+lib/libgsl.so 
+lib/libposteffect.so 
+lib/libgemini.so 
+lib/libmmipl.so 
+
+# Radio
+lib/libhtc_ril.so
+lib/libims_ril.so 
+lib/libreference-ril.so 
