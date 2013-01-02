@@ -1,0 +1,220 @@
+type ALPHA
+
+### Row 1 ###
+
+key Q {
+    label:                              'Q'
+    base:                               'q'
+    shift:                              'Q'
+    alt:                                '1'
+}
+
+key W {
+    label:                              'W'
+    base:                               'w'
+    shift:                              'W'
+    alt:                                '2'
+}
+
+key E {
+    label:                              'E'
+    base:                               'e'
+    shift:                              'E'
+    alt:                                '3'
+}
+
+key R {
+    label:                              'R'
+    base:                               'r'
+    shift:                              'R'
+    alt:                                '4'
+}
+
+key T {
+    label:                              'T'
+    base:                               't'
+    shift:                              'T'
+    alt:                                '5'
+}
+
+key Y {
+    label:                              'Y'
+    base:                               'y'
+    shift:                              'Y'
+    alt:                                '6'
+}
+
+key U {
+    label:                              'U'
+    base:                               'u'
+    shift:                              'U'
+    alt:                                '7'
+}
+
+key I {
+    label:                              'I'
+    base:                               'i'
+    shift:                              'I'
+    alt:                                '8'
+}
+
+key O {
+    label:                              'O'
+    base:                               'o'
+    shift:                              'O'
+    alt:                                '9'
+}
+
+key P {
+    label:                              'P'
+    base:                               'p'
+    shift:                              'P'
+    alt:                                '0'
+}
+
+### Row 2 ###
+
+key A {
+    label:                              'A'
+    base:                               'a'
+    shift:                              'A'
+    alt:                                '!'
+}
+
+key S {
+    label:                              'S'
+    base:                               's'
+    shift:                              'S'
+    alt:                                '#'
+}
+
+key D {
+    label:                              'D'
+    base:                               'd'
+    shift:                              'D'
+    alt:                                '$'
+}
+
+key F {
+    label:                              'F'
+    base:                               'f'
+    shift:                              'F'
+    alt:                                '%'
+}
+
+key G {
+    label:                              'G'
+    base:                               'g'
+    shift:                              'G'
+    alt:                                '&'
+}
+
+key H {
+    label:                              'H'
+    base:                               'h'
+    shift:                              'H'
+    alt:                                '*'
+}
+
+key J {
+    label:                              'J'
+    base:                               'j'
+    shift:                              'J'
+    alt:                                '('
+}
+
+key K {
+    label:                              'K'
+    base:                               'k'
+    shift:                              'K'
+    alt:                                ')'
+}
+
+key L {
+    label:                              'L'
+    base:                               'l'
+    shift:                              'L'
+    alt:                                '/'
+}
+
+### Row 3 ###
+
+key Z {
+    label:                              'Z'
+    base:                               'z'
+    shift:                              'Z'
+}
+
+key X {
+    label:                              'X'
+    base:                               'x'
+    shift:                              'X'
+    alt:                                '~'
+}
+
+key C {
+    label:                              'C'
+    base:                               'c'
+    shift:                              'C'
+    alt:                                '_'
+}
+
+key V {
+    label:                              'V'
+    base:                               'v'
+    shift:                              'V'
+    alt:                                '-'
+}
+
+key B {
+    label:                              'B'
+    base:                               'b'
+    shift:                              'B'
+    alt:                                '+'
+}
+
+key N {
+    label:                              'N'
+    base:                               'n'
+    shift:                              'N'
+    alt:                                '='
+}
+
+key M {
+    label:                              'M'
+    base:                               'm'
+    shift:                              'M'
+    alt:                                '''
+}
+
+key QUECHAR {
+    label, number:                      '?'
+    base:                               '?'
+    shift:                              '?'
+    alt:                                '"'
+}
+
+### Row 4 ###
+
+key COMMA {
+    label, number:                      ','
+    base:                               ','
+}
+
+key SPACE {
+    label:                              ' '
+    base:                               ' '
+    alt:                                '\uef01'
+}
+
+key FUNC_3 {
+    label, number:                      '.'
+    base:                               '.'
+    alt:                                '\uEF03'
+}
+
+key AT {
+    label, number:                      '@'
+    base:                               '@'
+    alt:                                '\uEF05'
+}
