@@ -67,8 +67,6 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/lexikon/overlay
 
 # cdma config xml file
 PRODUCT_COPY_FILES += \
-    device/htc/lexikon/apns-conf.xml:system/etc/apns-conf.xml \
-    device/htc/lexikon/spn-conf.xml:system/etc/spn-conf.xml \
     device/htc/lexikon/voicemail-conf.xml:system/etc/voicemail-conf.xml
 
 PRODUCT_PACKAGES += \
@@ -78,18 +76,13 @@ PRODUCT_PACKAGES += \
 
 # Keychars
 PRODUCT_COPY_FILES += \
-    device/htc/lexikon/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
-    device/htc/lexikon/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
-    device/htc/lexikon/keychars/lexikon-keypad.kcm.bin:system/usr/keychars/lexikon-keypad.kcm.bin \
-    device/htc/lexikon/keychars/lexikon-keypad-v0.kcm.bin:system/usr/keychars/lexikon-keypad-v0.kcm.bin 
+    device/htc/lexikon/keychars/lexikon-keypad.kcm.bin:system/usr/keychars/lexikon-keypad.kcm.bin 
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     device/htc/lexikon/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
-    device/htc/lexikon/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad.kl:system/usr/keylayout/lexikon-keypad.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad-v0.kl:system/usr/keylayout/lexikon-keypad-v0.kl
+    device/htc/lexikon/keylayout/lexikon-keypad.kl:system/usr/keylayout/lexikon-keypad.kl
 
 # Firmware
 PRODUCT_COPY_FILES += \

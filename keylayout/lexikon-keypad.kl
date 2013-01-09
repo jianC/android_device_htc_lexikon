@@ -57,6 +57,7 @@ key 46    C                 WAKE_DROPPED
 key 47    V                 WAKE_DROPPED
 key 48    B                 WAKE_DROPPED
 key 49    N                 WAKE_DROPPED
+key 215   AT                WAKE_DROPPED
 
 key 114   VOLUME_DOWN       WAKE
 key 115   VOLUME_UP         WAKE
@@ -81,7 +82,6 @@ key 11    0
 # not use in lexikon
 # key 183   USER1             WAKE_DROPPED
 # key 184   USER2             WAKE_DROPPED
-# key 215   FUNC_3            WAKE_DROPPED
 
 # key 12    MINUS             WAKE_DROPPED
 # key 13    EQUALS            WAKE_DROPPED
