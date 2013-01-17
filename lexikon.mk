@@ -78,13 +78,15 @@ PRODUCT_PACKAGES += \
 
 # Keychars
 PRODUCT_COPY_FILES += \
-    device/htc/lexikon/keychars/lexikon-keypad.kcm.bin:system/usr/keychars/lexikon-keypad.kcm.bin 
+    device/htc/lexikon/keychars/lexikon-keypad.kcm.bin:system/usr/keychars/lexikon-keypad.kcm.bin \
+    device/htc/lexikon/keychars/lexikon-keypad-v0.kcm.bin:system/usr/keychars/lexikon-keypad-v0.kcm.bin 
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     device/htc/lexikon/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
-    device/htc/lexikon/keylayout/lexikon-keypad.kl:system/usr/keylayout/lexikon-keypad.kl
+    device/htc/lexikon/keylayout/lexikon-keypad.kl:system/usr/keylayout/lexikon-keypad.kl \
+    device/htc/lexikon/keylayout/lexikon-keypad-v0.kl:system/usr/keylayout/lexikon-keypad-v0.kl
 
 # Firmware
 PRODUCT_COPY_FILES += \
