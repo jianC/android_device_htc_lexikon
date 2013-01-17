@@ -7,6 +7,8 @@ ro.sf.lcd_density=240
 debug.fb.rgb565=0
 
 rild.libpath=/system/lib/libhtc_ril.so
+#for libsms_ril
+rild.lib_ims_path=/system/lib/libims_ril.so
 
 # lexikon RF team request
 ro.ril.gprsclass=12
@@ -60,6 +62,9 @@ ro.ril.def.agps.mode=2
 
 # For HSDPA low throughput
 ro.ril.disable.power.collapse=1
+
+# Vivow China NEL use
+ro.ril.update.vivow.acoustic=1
 
 # Properties of Scalado Denoise param.
 postprocess.iso_midband=400
