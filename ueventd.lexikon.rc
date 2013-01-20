@@ -44,3 +44,7 @@
 /dev/qmi2               0640    radio       radio
 /dev/smd_pkt_loopback	0640    radio       radio
 /dev/smd_sns_dsps	0640    radio       radio
+
+# CDMA radio interface MUX
+/dev/ppp                  0660   radio      vpn
+/dev/tun                  0640   vpn        vpn
