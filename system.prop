@@ -65,9 +65,5 @@ ro.ril.disable.power.collapse=1
 # Vivow China NEL use
 ro.ril.update.vivow.acoustic=1
 
-# Properties of Scalado Denoise param.
-postprocess.iso_midband=400
-postprocess.denoise_level=5
-
 # Recording Audio Workaround
 ro.camera.sound.disabled=1
