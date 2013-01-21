@@ -44,9 +44,8 @@ persist.data_netmgrd_nint=8
 wifi.interface=eth0
 wifi.supplicant_scan_interval=15
 
-#Welly_Fang_01/05/2010
-ro.cdma.home.operator.numeric = 310012
-ro.cdma.home.operator.alpha = Verizon
+ro.cdma.home.operator.numeric=311220
+cdma.operator.numeric=311220
 
 mobiledata.interfaces=rmnet0
 
