@@ -48,7 +48,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.gmsversion=2.2_r8 \
     ro.setupwizard.enable_bypass=1 \
     dalvik.vm.lockprof.threshold=500 \
-    dalvik.vm.dexopt-flags=m=y \
     persist.telephony.support_ipv6=true \
     persist.telephony.support_ipv4=true 
 
