@@ -42,7 +42,7 @@ ro.use_data_netmgrd=true
 persist.data_netmgrd_nint=8
 
 wifi.interface=eth0
-wifi.supplicant_scan_interval=15
+wifi.supplicant_scan_interval=45
 
 ro.cdma.home.operator.numeric=311220
 cdma.operator.numeric=311220
