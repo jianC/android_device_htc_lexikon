@@ -64,6 +64,3 @@ ro.ril.disable.power.collapse=1
 
 # Vivow China NEL use
 ro.ril.update.vivow.acoustic=1
-
-# Recording Audio Workaround
-ro.camera.sound.disabled=1
