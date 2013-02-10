@@ -20,6 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 PRODUCT_COPY_FILES += device/common/gps/gps.conf_US:system/etc/gps.conf
 
+# Inherit some common cyanogenmod stuff.
+$(call inherit-product, vendor/cyanogen/products/common_full.mk)
+
 ## (1) First, the most specific values, i.e. the aspects that are specific to GSM
 
 PRODUCT_COPY_FILES += \
@@ -67,6 +70,9 @@ PRODUCT_PACKAGES += \
     lights.lexikon \
     sensors.lexikon \
     gps.lexikon
+
+# Add the Torch app
+PRODUCT_PACKAGES += Torch
 
 # Keychars
 PRODUCT_COPY_FILES += \
@@ -117,6 +123,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/prebuilt/bcm4329.ko:system/lib/modules/bcm4329.ko
 
+# Broadcom FM radio
+$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
+
+# Bootanimation
+PRODUCT_COPY_FILES +=  \
+    vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
+
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)
 
@@ -134,6 +147,13 @@ $(call inherit-product, device/htc/lexikon/media_htcaudio.mk)
 $(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
 
 PRODUCT_NAME := htc_lexikon
+PRODUCT_BRAND := htc_wwe
 PRODUCT_DEVICE := lexikon
 PRODUCT_MODEL := HTC Merge
 PRODUCT_MANUFACTURER := HTC
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_lexikon BUILD_ID=GRJ22 BUILD_FINGERPRINT=us_cellular_wwe/htc_lexikon/lexikon:2.3.4/GRJ22/325543.1:user/release-keys PRIVATE_BUILD_DESC="3.20.573.1 CL325543 release-keys"
+
+# Release name and versioning
+CM_BUILD := lexikon
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
