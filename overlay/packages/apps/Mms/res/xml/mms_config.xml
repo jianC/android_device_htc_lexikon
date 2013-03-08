@@ -23,13 +23,13 @@
 
 <mms_config version="3">
     <!-- Maximum message size in bytes for a MMS message -->
-    <int name="maxMessageSize">307200</int>
+    <int name="maxMessageSize">500000</int> <!-- From USC GB Lexikon OTA -->
 
     <!-- Maximum height for an attached image -->
-    <int name="maxImageHeight">768</int>
+    <int name="maxImageHeight">1944</int> <!-- 5M -->
 
     <!-- Maximum width for an attached image -->
-    <int name="maxImageWidth">1024</int>
+    <int name="maxImageWidth">2592</int> <!-- 5m -->
 
     <!-- UAProf URL -->
     <string name="uaProfUrl">http://mmsc1.uscc.net/mmsc/MMS</string>
