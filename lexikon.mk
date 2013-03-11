@@ -62,7 +62,7 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/lexikon/overlay
 
 # cdma config xml file
 PRODUCT_COPY_FILES += \
-    vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
+    device/htc/lexikon/apns-conf.xml:system/etc/apns-conf.xml \
     device/htc/lexikon/spn-conf.xml:system/etc/spn-conf.xml \
     device/htc/lexikon/voicemail-conf.xml:system/etc/voicemail-conf.xml
 
