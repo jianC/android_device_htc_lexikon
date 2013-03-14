@@ -46,9 +46,6 @@ adb pull /system/lib/liboemcamera.so ../../../vendor/$MANUFACTURER/$DEVICE/propr
 adb pull /system/lib/libposteffect.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/lib/libgemini.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/lib/libmmipl.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/lib/hw/gps.lexikon.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/lib/libloc_api-rpc.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/lib/libloc_ext.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/lib/libhtc_ril.so ../../../vendor/htc/$DEVICE/proprietary
 adb pull /system/lib/libims_ril.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/lib/libreference-ril.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
@@ -105,9 +102,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libposteffect.so:/system/lib/libposteffect.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libgemini.so:/system/lib/libgemini.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libmmipl.so:/system/lib/libmmipl.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/gps.lexikon.so:/system/lib/hw/gps.lexikon.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libloc_api-rpc.so:/system/lib/libloc_api-rpc.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libloc_ext.so:/system/lib/libloc_ext.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libmmjpeg.so:/system/lib/libmmjpeg.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libhtc_ril.so:/system/lib/libhtc_ril.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libims_ril.so:/system/lib/libims_ril.so \\
