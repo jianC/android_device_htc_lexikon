@@ -47,10 +47,6 @@ adb pull /system/lib/libposteffect.so ../../../vendor/$MANUFACTURER/$DEVICE/prop
 adb pull /system/lib/libgemini.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/lib/libmmipl.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/lib/libhtc_ril.so ../../../vendor/htc/$DEVICE/proprietary
-adb pull /system/lib/libims_ril.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/lib/libreference-ril.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/lib/libril_ims.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/lib/libril.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__MANUFACTURER__/$MANUFACTURER/g > ../../../vendor/$MANUFACTURER/$DEVICE/$DEVICE-vendor-blobs.mk
 # Copyright (C) 2010 The Android Open Source Project
@@ -103,11 +99,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libgemini.so:/system/lib/libgemini.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libmmipl.so:/system/lib/libmmipl.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libmmjpeg.so:/system/lib/libmmjpeg.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libhtc_ril.so:/system/lib/libhtc_ril.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libims_ril.so:/system/lib/libims_ril.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libreference-ril.so:/system/lib/libreference-ril.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libril_ims.so:/system/lib/libreference-ril.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libril.so:/system/lib/libril.so
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libhtc_ril.so:/system/lib/libhtc_ril.so
 EOF
 
 ./setup-makefiles.sh

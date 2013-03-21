@@ -69,7 +69,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     lights.lexikon \
     sensors.lexikon \
-    gps.lexikon
+    gps.lexikon \
+    libloc_api-rpc
 
 # Add the Torch app
 PRODUCT_PACKAGES += Torch
