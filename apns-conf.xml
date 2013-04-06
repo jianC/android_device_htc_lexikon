@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<apns version="8">
+<apns version="7">
     <apn carrier="USC" apn="1" mmsc="http://mmsc1.uscc.net/mmsc/MMS" mcc="000" mnc="00" type="mms" />
     <apn carrier="Cosmote Internet" apn="internet" mcc="202" mnc="01" type="default,hipri" />
     <apn carrier="Cosmote MMS" apn="mms" mmsc="http://mmsc.cosmote.gr:8002" mmsproxy="10.10.10.20" mmsport="8080" mcc="202" mnc="01" type="mms" />
