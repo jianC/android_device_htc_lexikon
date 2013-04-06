@@ -87,6 +87,10 @@ PRODUCT_COPY_FILES += \
     device/htc/lexikon/keylayout/lexikon-keypad.kl:system/usr/keylayout/lexikon-keypad.kl \
     device/htc/lexikon/keylayout/lexikon-keypad-v0.kl:system/usr/keylayout/lexikon-keypad-v0.kl
 
+# Touchscreen
+PRODUCT_COPY_FILES += \
+    device/htc/lexikon/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
+
 # Firmware
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
