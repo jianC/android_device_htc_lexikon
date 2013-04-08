@@ -32,6 +32,7 @@ USE_CAMERA_STUB := true
 -include vendor/htc/lexikon/BoardConfigVendor.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := lexikon
+TARGET_OTA_ASSERT_DEVICE := lexikon,lexikonct
 
 # for keypad
 BOARD_GLOBAL_CFLAGS += -DVISION_KEYPAD
