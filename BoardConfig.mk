@@ -23,35 +23,34 @@
 # WARNING: This line must come *before* including the proprietary
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
-USE_CAMERA_STUB := true
 
 # inherit from common msm7x30
 -include device/htc/msm7x30-common/BoardConfigCommon.mk
 
-# inherit from the proprietary version
--include vendor/htc/lexikon/BoardConfigVendor.mk
-
+# Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lexikon
-TARGET_OTA_ASSERT_DEVICE := lexikon,lexikonct
 
-# for keypad
-BOARD_GLOBAL_CFLAGS += -DVISION_KEYPAD
+BOARD_USES_LEGACY_OVERLAY := true
 
-BOARD_USE_NEW_LIBRIL_HTC := true
+BOARD_USES_QCOM_AUDIO_VOIPMUTE := false
+BOARD_USES_QCOM_AUDIO_RESETALL := false
 
-BOARD_USES_QCOM_VOIPMUTE := false
-BOARD_USES_QCOM_RESETALL := false
-
+# Kernel
 BOARD_KERNEL_CMDLINE := no_console_suspend=1
 BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE) msmsdcc_power_gpio=88
 BOARD_KERNEL_BASE := 0x04a00000
 BOARD_KERNEL_PAGE_SIZE := 4096
 
+TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
+TARGET_KERNEL_CONFIG := evervolv_lexikon_defconfig
+ARM_EABI_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilt/linux-x86/toolchain/arm-linux-linaro-4.7/bin
+
+BOARD_USES_GENLOCK := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := lexikon
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
-# Workaround for lexikon's broken overlay scaling
-BOARD_OVERLAY_MINIFICATION_LIMIT := 2
+# USB
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
 
 # cat /proc/emmc
 # dev:        size     erasesize name
@@ -64,15 +63,12 @@ BOARD_OVERLAY_MINIFICATION_LIMIT := 2
 # mmcblk0p26: 4a4b4200 00000200 "userdata"
 # mmcblk0p29: 01400000 00000200 "devlog"
 
+# Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 536608768
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1246445568
 BOARD_BOOTIMAGE_PARTITION_SIZE := 4194304
 BOARD_FLASH_BLOCK_SIZE := 262144
-
-TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
-TARGET_PREBUILT_KERNEL := device/htc/lexikon/prebuilt/kernel
-TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/lexikon/prebuilt/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1

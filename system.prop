@@ -2,11 +2,12 @@
 # system.prop for lexikon
 #
 
+debug.fb.rgb565 = 0
 ro.sf.lcd_density=240
 
-debug.fb.rgb565=0
-
 rild.libpath=/system/lib/libhtc_ril.so
+ro.telephony.ril_class=HTCQualcommRIL
+ro.telephony.ril.v3=signalstrengthgsm
 
 # lexikon RF team request
 ro.ril.gprsclass=12
@@ -39,20 +40,16 @@ net.tcp.buffersize.evdo_b=4094,87380,262144,4096,16384,262144
 ro.use_data_netmgrd=true
 persist.data_netmgrd_nint=8
 
-wifi.interface=eth0
+wifi.interface=wlan0
 wifi.supplicant_scan_interval=45
 
-ro.cdma.home.operator.numeric=311220
-cdma.operator.numeric=311220
-
-mobiledata.interfaces=rmnet0
+#Welly_Fang_01/05/2010
+ro.cdma.home.operator.numeric = 310012
+ro.cdma.home.operator.alpha = Verizon
 
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
 ro.opengles.version=131072
-
-# This is a high density device with more memory, so larger vm heaps for it.
-dalvik.vm.heapsize=32m
 
 # For the default value of agps
 ro.ril.def.agps.mode=2
@@ -60,5 +57,6 @@ ro.ril.def.agps.mode=2
 # For HSDPA low throughput
 ro.ril.disable.power.collapse=1
 
-# Vivow China NEL use
-ro.ril.update.vivow.acoustic=1
+# USB Mount
+persist.sys.usb.config=mass_storage,adb
+persist.service.adb.enable=1

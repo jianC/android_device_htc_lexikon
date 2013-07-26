@@ -1,0 +1,8 @@
+[
+  {
+    "repository": "android_device_htc_common",
+    "target_path": "device/htc/common",
+    "branch": "gingerbread",
+    "dep_type": "device"
+  }
+]
