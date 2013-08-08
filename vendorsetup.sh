@@ -21,4 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo cm_lexikon-userdebug
-add_lunch_combo cms_lexikon-eng
+add_lunch_combo cm_lexikon-eng
