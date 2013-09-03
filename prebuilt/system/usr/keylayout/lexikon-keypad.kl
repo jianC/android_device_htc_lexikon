@@ -33,7 +33,7 @@ key 10    9
 key 11    0
 key 12    MINUS
 key 13    EQUALS
-key 14    DEL
+key 14    DEL	WAKE_DROPPED
 key 15    TAB
 key 16    Q
 key 17    W
@@ -121,7 +121,7 @@ key 98    NUMPAD_DIVIDE
 key 99    SYSRQ
 key 100   ALT_RIGHT
 # key 101 "KEY_LINEFEED"
-key 102   MOVE_HOME
+key 102   HOME
 key 103   DPAD_LEFT
 key 104   PAGE_UP
 key 105   DPAD_DOWN
