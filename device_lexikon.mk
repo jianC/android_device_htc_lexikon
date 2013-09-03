@@ -65,6 +65,10 @@ PRODUCT_COPY_FILES += \
     device/htc/lexikon/prebuilt/system/etc/voPDLog.cfg:system/etc/voPDLog.cfg \
     device/htc/lexikon/prebuilt/system/etc/voVidDec.dat:system/etc/voVidDec.dat
 
+# Media profile
+PRODUCT_COPY_FILES += \
+    device/htc/lexikon/prebuilt/system/etc/media_profiles.xml:system/etc/media_profiles.xml
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
