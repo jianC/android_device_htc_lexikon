@@ -20,32 +20,36 @@
         <value>3</value>
     </array>
     <array name="cpu.speeds">
-        <value>245000</value>
-        <value>384000</value>
-        <value>460800</value>
-        <value>499200</value>
-        <value>576000</value>
-        <value>614400</value>
-        <value>652800</value>
-        <value>691200</value>
+        <value>245760</value>
+        <value>368640</value>
         <value>768000</value>
         <value>806400</value>
-        <value>844800</value>
-        <value>998400</value>
+        <value>1024000</value>
+        <value>1113600</value>
+        <value>1305600</value>
+        <value>1408000</value>
+        <value>1497600</value>
+        <value>1593600</value>
+        <value>1612800</value>
+        <value>1766400</value>
+        <value>1804800</value>
+        <value>1920000</value>
     </array>
     <item name="cpu.idle">2.8</item>
     <array name="cpu.active">
-        <value>66.6</value>
-        <value>84</value>
+        <value>68</value>
+        <value>80</value>
         <value>90.8</value>
-        <value>96</value>
-        <value>105</value>
-        <value>111.5</value>
-        <value>117.3</value>
-        <value>123.6</value>
         <value>134.5</value>
-        <value>141.8</value>
-        <value>148.5</value>
-        <value>168.4</value>
+	<value>141.8</value>
+        <value>170</value>
+        <value>178</value>
+        <value>190</value>
+        <value>196</value>
+        <value>208</value>
+        <value>210</value>
+        <value>221</value>
+        <value>223</value>
+        <value>235</value>
     </array>
 </device>
