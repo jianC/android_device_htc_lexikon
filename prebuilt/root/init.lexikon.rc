@@ -71,9 +71,9 @@ on early-fs
     write /sys/block/mmcblk0/bdi/read_ahead_kb 1024
     write /sys/block/mmcblk1/bdi/read_ahead_kb 1024
 
-    # Enable low memory killer to check file pages
-    write /sys/module/lowmemorykiller/parameters/minfile 0,0,0,5120,5632,6144
-    write /sys/module/lowmemorykiller/parameters/check_filepages 1
+    # memory tweak
+    echo 65 > /proc/sys/vm/vfs_cache_pressure
+    echo 35 > /proc/sys/vm/swappiness
 
     write /sys/devices/system/cpu/cpufreq/ondemand/up_threshold 90
     write /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate 50000
