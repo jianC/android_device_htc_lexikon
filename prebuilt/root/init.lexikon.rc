@@ -1,22 +1,32 @@
 import init.htc7x30.usb.rc
 
 on early-init
-    export EXTERNAL_STORAGE /mnt/sdcard
-    mkdir /mnt/sdcard 0000 system system
-    symlink /mnt/sdcard /sdcard
+    mkdir /storage 0555 root root
+    mkdir /storage/sdcard0 0555 root root
+    export EXTERNAL_STORAGE /storage/sdcard0
+
+    # Support legacy paths
+    symlink /storage/sdcard0 /sdcard
+    symlink /storage/sdcard0 /mnt/sdcard
+
+    setprop ro.crypto.tmpfs_options size=128m,mode=0771,uid=1000,gid=1000
+    write /proc/sys/vm/min_free_kbytes 8192
 
 on early-fs
-    mkdir /system
-    mkdir /data 0771 system system
-    mkdir /cache 0770 system cache
     mkdir /devlog 0700 root root
 
-    mount ext4 /dev/block/mmcblk0p25 /system wait ro noatime nodiratime barrier=0 nouser_xattr
-    mount ext4 /dev/block/mmcblk0p26 /data wait noatime nodiratime nosuid nodev barrier=0 noauto_da_alloc nouser_xattr
-    mount ext4 /dev/block/mmcblk0p27 /cache wait noatime nodiratime nosuid nodev barrier=0 nouser_xattr
-    mount ext4 /dev/block/mmcblk0p28 /local wait noatime nodiratime nosuid nodev barrier=0
-    mount ext4 /dev/block/mmcblk0p39 /devlog wait noatime nodiratime nosuid nodev barrier=0 nouser_xattr
+on fs
+    mount_all /fstab.lexikon
 
+on post-fs
+    chmod 0771 /cache
+    chown system cache /cache
+    chmod 0700 /devlog
+    chown root root /devlog
+    chmod 0771 /data
+    chown system system /data
+
+on post-fs-data
     mkdir /data/misc 1771 system misc
     mkdir /data/misc/wifi 0770 wifi wifi
     mkdir /data/misc/wifi/sockets 0770 wifi wifi
@@ -39,6 +49,9 @@ on early-fs
     chown radio radio /sys/class/power_supply/battery/charger_control
     chmod 0660        /sys/class/power_supply/battery/charger_control
 
+    setprop vold.post_fs_data_done 1
+
+on boot
     # bluetooth power up/down interface
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state

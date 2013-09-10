@@ -25,6 +25,7 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/lexikon/overlay
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/prebuilt/root/init.lexikon.rc:root/init.lexikon.rc \
+    device/htc/lexikon/prebuilt/root/fstab.lexikon:root/fstab.lexikon \
     device/htc/lexikon/prebuilt/root/ueventd.lexikon.rc:root/ueventd.lexikon.rc
 
 # call the proprietary setup
