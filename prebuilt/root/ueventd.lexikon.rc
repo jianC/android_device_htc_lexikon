@@ -6,7 +6,9 @@
 /dev/akm8975_aot          0640    compass   system
 
 #video
-/dev/msm_vidc*          0660    system    audio
+/dev/msm_vidc_reg         0660    system    audio
+/dev/msm_vidc_dec         0660    system    audio
+/dev/msm_vidc_enc         0660    system    audio
 
 #audio
 /dev/htc-acdb           0660    system      audio
@@ -23,9 +25,10 @@
 /dev/htc-acoustic       0660    system      audio
 
 #graphics
-/dev/msm_rotator        0660    system    graphics
+/dev/msm_rotator          0660    system    graphics
 /dev/kgsl-3d0           0666    root        root
 /dev/kgsl-2d0           0666    root        root
+/dev/kgsl-2d1           0666    root        root
 
 #genlock
 /dev/genlock            0666    root        root
@@ -57,7 +60,5 @@
 /dev/smd_pkt_loopback	0640    radio       radio
 /dev/smd_sns_dsps	0640    radio       radio
 
+# wifi
 /dev/rfkill             0660    root        wifi
-/dev/ttyHS0             0660   bluetooth  bluetooth
-/dev/ttyMSM0            0600   bluetooth  net_bt_stack
-/dev/uinput             0660   system     bluetooth
