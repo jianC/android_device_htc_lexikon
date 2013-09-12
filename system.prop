@@ -66,10 +66,6 @@ ro.ril.def.agps.mode=2
 # For HSDPA low throughput
 ro.ril.disable.power.collapse=1
 
-# Camera workaround
-ro.camera.sound.disabled=1
-ro.camera.preview=true
-
 # USB Mount
 persist.sys.usb.config=mass_storage,adb
 persist.service.adb.enable=1
