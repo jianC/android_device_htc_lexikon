@@ -83,9 +83,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Misc
 PRODUCT_PACKAGES += \
-    gps.lexikon \
-    sensors.lexikon \
-    lights.lexikon
+    gps.lexikon
 
 # Broadcom firmware
 PRODUCT_PACKAGES += \
