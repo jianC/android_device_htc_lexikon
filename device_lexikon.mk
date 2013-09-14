@@ -81,10 +81,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enable_bypass=1 \
     dalvik.vm.dexopt-flags=m=y
 
-# CameraHal
-PRODUCT_PACKAGES += \
-    camera.msm7x30
-
 # Misc
 PRODUCT_PACKAGES += \
     gps.lexikon \
