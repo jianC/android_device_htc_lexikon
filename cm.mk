@@ -21,4 +21,4 @@ PRODUCT_MANUFACTURER := HTC
 # Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_lexikon BUILD_FINGERPRINT=us_cellular_wwe/htc_lexikon/lexikon:2.3.4/GRJ22/325543.1:user/release-keys PRIVATE_BUILD_DESC="3.20.573.1 CL325543 release-keys"
 
-TARGET_BOOTANIMATION_NAME := vertical-480x800
+TARGET_BOOTANIMATION_NAME := 480
