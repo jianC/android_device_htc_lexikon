@@ -5,11 +5,6 @@
 debug.fb.rgb565 = 0
 ro.sf.lcd_density=240
 
-debug.sf.hw=1
-debug.composition.type=mdp
-debug.qctwa.statusbar=1
-debug.qctwa.preservebuf=1
-
 # qcom build lub
 com.qc.hardware=true
 com.qc.hdmi_out=false
