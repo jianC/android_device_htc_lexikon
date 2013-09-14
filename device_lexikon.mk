@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
 # Firmware
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/prebuilt/vendor/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
-    device/htc/lexikon/prebuilt/vendor/firmware/BCM4329B1_002.002.023.0511.0557.hcd:system/etc/firmware/BCM4329B1_002.002.023.0511.0557.hcd \
     device/htc/lexikon/prebuilt/vendor/firmware/default.acdb:system/etc/firmware/default.acdb \
     device/htc/lexikon/prebuilt/vendor/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
     device/htc/lexikon/prebuilt/vendor/firmware/default_org_nel.acdb:system/etc/firmware/default_org_nel.acdb
