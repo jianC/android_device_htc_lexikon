@@ -27,7 +27,6 @@ adb pull /system/bin/awb_camera $VENDOR_DIR
 adb pull /system/bin/awb_camera $VENDOR_DIR
 adb pull /system/bin/bma150_usr $VENDOR_DIR
 adb pull /system/bin/dmagent $VENDOR_DIR
-adb pull /system/bin/htc_ebdlogd $VENDOR_DIR
 adb pull /system/bin/logcat2 $VENDOR_DIR
 adb pull /system/bin/lsc_camera $VENDOR_DIR
 adb pull /system/bin/rmt_storage $VENDOR_DIR
@@ -97,7 +96,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/awb_camera:/system/bin/awb_camera \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/bma150_usr:/system/bin/bma150_usr \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/dmagent:/system/bin/dmagent \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/htc_ebdlogd:/system/bin/htc_ebdlogd \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/logcat2:/system/bin/logcat2 \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/lsc_camera:/system/bin/lsc_camera \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/rmt_storage:/system/bin/rmt_storage \\
