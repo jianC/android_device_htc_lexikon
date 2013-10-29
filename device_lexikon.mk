@@ -85,6 +85,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.verify-bytecode = false \
     dalvik.vm.dexopt-flags=v=n,o=v
 
+# MovieStudio
+PRODUCT_PACKAGES += \
+    libI420colorconvert
+
 # Misc
 PRODUCT_PACKAGES += \
     gps.lexikon \
