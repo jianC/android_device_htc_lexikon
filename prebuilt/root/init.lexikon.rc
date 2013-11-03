@@ -122,7 +122,7 @@ service akmd /system/bin/akmd
     group compass misc input
 
 service hciattach /system/bin/brcm_patchram_plus --enable_hci --enable_lpm \
-    --baudrate 3000000 --patchram /etc/firmware/bcm4329.hcd /dev/ttyHS0
+    --baudrate 3000000 --patchram /vendor/firmware/bcm4329.hcd /dev/ttyHS0
     user bluetooth
     group bluetooth net_bt_admin
     disabled
