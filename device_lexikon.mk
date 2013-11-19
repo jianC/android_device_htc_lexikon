@@ -31,10 +31,6 @@ PRODUCT_COPY_FILES += \
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
 
-# vold config
-PRODUCT_COPY_FILES += \
-    device/htc/lexikon/prebuilt/system/etc/vold.fstab:system/etc/vold.fstab
-
 # Input config files
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/prebuilt/system/usr/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc \

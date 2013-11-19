@@ -30,6 +30,8 @@
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lexikon
 
+TARGET_RECOVERY_FSTAB = device/htc/lexikon/prebuilt/root/fstab.lexikon
+
 BOARD_USES_QCOM_AUDIO_VOIPMUTE := false
 BOARD_USES_QCOM_AUDIO_RESETALL := false
 BOARD_HAVE_HTC_AUDIO := true
