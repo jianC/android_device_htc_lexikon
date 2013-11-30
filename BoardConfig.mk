@@ -37,7 +37,7 @@ BOARD_USES_QCOM_AUDIO_RESETALL := false
 BOARD_HAVE_HTC_AUDIO := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := no_console_suspend=1
+BOARD_KERNEL_CMDLINE := no_console_suspend=1 androidboot.selinux=permissive
 BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE) msmsdcc_power_gpio=88
 BOARD_KERNEL_BASE := 0x04a00000
 BOARD_KERNEL_PAGE_SIZE := 4096
