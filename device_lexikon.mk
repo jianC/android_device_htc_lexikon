@@ -86,6 +86,11 @@ PRODUCT_PACKAGES += \
     fw_bcm4329.bin \
     fw_bcm4329_apsta.bin
 
+# legacy version of skia
+# fixes the app switcher previews
+PRODUCT_PACKAGES += \
+    libskia_legacy
+
 $(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
 
 # media profiles and capabilities spec
