@@ -75,6 +75,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.gmsversion=2.2_r8 \
     ro.setupwizard.enable_bypass=1 \
     ro.kernel.android.checkjni=0
+    ro.config.low_ram=true
 
 # Misc
 PRODUCT_PACKAGES += \
