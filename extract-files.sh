@@ -56,6 +56,7 @@ adb pull /system/lib/liboemcamera.so $VENDOR_DIR
 adb pull /system/lib/libcameraface.so $VENDOR_DIR
 adb pull /system/lib/libposteffect.so $VENDOR_DIR
 adb pull /system/lib/libcamerapp.so $VENDOR_DIR
+adb pull /system/lib/libsurfaceflinger_client.so $VENDOR_DIR
 adb pull /system/lib/libchromatix_s5k4e1gx_default_video.so $VENDOR_DIR
 adb pull /system/lib/libchromatix_s5k4e1gx_preview.so $VENDOR_DIR
 adb pull /system/lib/libOlaEngine.so $VENDOR_DIR
@@ -125,6 +126,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libcameraface.so:system/lib/libcameraface.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libposteffect.so:system/lib/libposteffect.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libcamerapp.so:system/lib/libcamerapp.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libchromatix_s5k4e1gx_default_video.so:/system/lib/libchromatix_s5k4e1gx_default_video.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libchromatix_s5k4e1gx_preview.so:/system/lib/libchromatix_s5k4e1gx_preview.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libOlaEngine.so:system/lib/libOlaEngine.so \\
