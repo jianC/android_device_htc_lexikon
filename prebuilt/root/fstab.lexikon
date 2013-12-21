@@ -10,3 +10,6 @@
 #SDCard
 /devices/platform/msm_sdcc.4/mmc_host/mmc2 	auto	auto	defaults		voldmanaged=sdcard0:auto,noemulatedsd
 
+#Swap (change as needed, this does nothing for now)
+/dev/block/zram0 none swap defaults zramsize=0
+

@@ -18,6 +18,7 @@ on early-fs
 
 on fs
     mount_all /fstab.lexikon
+    swapon_all /fstab.lexikon
 
 on post-fs
     chmod 0771 /cache
