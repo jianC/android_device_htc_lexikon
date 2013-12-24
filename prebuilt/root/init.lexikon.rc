@@ -91,10 +91,6 @@ on boot
     write /sys/block/mmcblk0/bdi/read_ahead_kb 1024
     write /sys/block/mmcblk1/bdi/read_ahead_kb 1024
 
-    # memory tweak
-    echo 65 > /proc/sys/vm/vfs_cache_pressure
-    echo 35 > /proc/sys/vm/swappiness
-
     write /sys/devices/system/cpu/cpufreq/ondemand/up_threshold 90
     write /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate 50000
 
