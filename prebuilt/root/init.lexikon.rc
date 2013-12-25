@@ -2,7 +2,6 @@ import init.htc7x30.usb.rc
 
 on init
     mkdir /mnt/media_rw/sdcard0 0700 media_rw media_rw
-    mkdir /storage 0555 root root
     mkdir /storage/sdcard0 0700 root root
     export EXTERNAL_STORAGE /storage/sdcard0
 
@@ -10,7 +9,6 @@ on init
     symlink /storage/sdcard0 /sdcard
     symlink /storage/sdcard0 /mnt/sdcard
 
-    setprop ro.crypto.tmpfs_options size=128m,mode=0771,uid=1000,gid=1000
     write /proc/sys/vm/min_free_kbytes 8192
 
 on early-fs
@@ -25,8 +23,6 @@ on post-fs
     chown system cache /cache
     chmod 0700 /devlog
     chown root root /devlog
-    chmod 0771 /data
-    chown system system /data
 
 on post-fs-data
     mkdir /data/misc 1771 system misc
