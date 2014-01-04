@@ -26,6 +26,7 @@
 /dev/msm_rotator        0660    system    graphics
 /dev/kgsl-3d0           0666    root        root
 /dev/kgsl-2d0           0666    root        root
+/dev/pmem               0660    system      graphics
 
 #genlock
 /dev/genlock            0666    root        root
