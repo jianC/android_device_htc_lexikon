@@ -30,28 +30,18 @@
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lexikon
 
-TARGET_RECOVERY_FSTAB = device/htc/lexikon/prebuilt/root/fstab.lexikon
-
-BOARD_USES_QCOM_AUDIO_VOIPMUTE := false
-BOARD_USES_QCOM_AUDIO_RESETALL := false
-BOARD_HAVE_HTC_AUDIO := true
-
 # Kernel
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 androidboot.selinux=permissive
-BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE) msmsdcc_power_gpio=88
+BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE)
 BOARD_KERNEL_BASE := 0x04a00000
 BOARD_KERNEL_PAGE_SIZE := 4096
 
-TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
+TARGET_KERNEL_SOURCE := kernel/htc/msm7x30-3.0
 TARGET_KERNEL_CONFIG := evervolv_lexikon_defconfig
 ARM_EABI_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin
 
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := lexikon
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
-TARGET_QCOM_HDMI_OUT := false
-
-# USB
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
 
 # cat /proc/emmc
 # dev:        size     erasesize name
@@ -71,6 +61,13 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 1246445568
 BOARD_BOOTIMAGE_PARTITION_SIZE := 4194304
 BOARD_FLASH_BLOCK_SIZE := 262144
 
+BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
+BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk1
+BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2
+BOARD_USES_MMCUTILS := true
+BOARD_HAS_NO_MISC_PARTITION := true
+
 # Recovery
-BOARD_RECOVERY_SWIPE := true
+#BOARD_RECOVERY_SWIPE := true
 BOARD_HAS_NO_SELECT_BUTTON := true
+TARGET_RECOVERY_FSTAB = device/htc/lexikon/prebuilt/root/fstab.lexikon

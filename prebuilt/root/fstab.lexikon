@@ -4,11 +4,9 @@
 /dev/block/mmcblk0p25   	/system         ext4    ro                              wait
 /dev/block/mmcblk0p26  	 	/data           ext4    noatime,nosuid,nodev,barrier=0  wait,encryptable=footer
 /dev/block/mmcblk0p27  	 	/cache          ext4    noatime,nosuid,nodev,barrier=0  wait
-/dev/block/mmcblk0p28   	/local          ext4    noatime,nosuid,nodev,barrier=0  wait
-/dev/block/mmcblk0p29   	/devlog         ext4    noatime,nosuid,nodev,barrier=0  wait
 
 #SDCard
-/devices/platform/msm_sdcc.4/mmc_host/mmc2 	auto	vfat	defaults		voldmanaged=sdcard0:auto,noemulatedsd
+/devices/platform/msm_sdcc.4/mmc_host/mmc2 	auto	auto	defaults		voldmanaged=sdcard0:1,noemulatedsd
 
 #Swap (change as needed, this does nothing for now)
 /dev/block/zram0 none swap defaults zramsize=0

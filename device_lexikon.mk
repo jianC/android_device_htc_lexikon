@@ -51,16 +51,6 @@ PRODUCT_COPY_FILES += \
     device/htc/lexikon/prebuilt/vendor/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
     device/htc/lexikon/prebuilt/vendor/firmware/default_org_nel.acdb:system/etc/firmware/default_org_nel.acdb
 
-# OMX Config Profiles
-PRODUCT_COPY_FILES += \
-    device/htc/lexikon/prebuilt/system/etc/vomeComp_RTSP.cfg:system/etc/vomeComp_RTSP.cfg \
-    device/htc/lexikon/prebuilt/system/etc/vomeComp.cfg:system/etc/vomeComp.cfg \
-    device/htc/lexikon/prebuilt/system/etc/vomeCore.cfg:system/etc/vomeCore.cfg \
-    device/htc/lexikon/prebuilt/system/etc/vomeplay.cfg:system/etc/vomeplay.cfg \
-    device/htc/lexikon/prebuilt/system/etc/vommcodec.cfg:system/etc/vommcodec.cfg \
-    device/htc/lexikon/prebuilt/system/etc/voPDLog.cfg:system/etc/voPDLog.cfg \
-    device/htc/lexikon/prebuilt/system/etc/voVidDec.dat:system/etc/voVidDec.dat
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
@@ -71,20 +61,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.enable.a52=0 \
     ro.ril.enable.a53=1 \
     ro.ril.def.agps.mode=6 \
-    ro.com.google.networklocation=1 \
-    ro.com.google.gmsversion=2.2_r8 \
-    ro.setupwizard.enable_bypass=1 \
-    ro.kernel.android.checkjni=0
     ro.config.low_ram=true
 
 # Misc
 PRODUCT_PACKAGES += \
     gps.lexikon
-
-# Broadcom firmware
-PRODUCT_PACKAGES += \
-    fw_bcm4329.bin \
-    fw_bcm4329_apsta.bin
 
 # legacy version of skia
 # fixes the app switcher previews
