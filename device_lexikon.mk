@@ -67,11 +67,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     gps.lexikon
 
-# legacy version of skia
-# fixes the app switcher previews
-PRODUCT_PACKAGES += \
-    libskia_legacy
-
+$(call inherit-product-if-exists, vendor/htc/msm7x30-common/msm7x30-vendor.mk)
 $(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
 
 # media profiles and capabilities spec
