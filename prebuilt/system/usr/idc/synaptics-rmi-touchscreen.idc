@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2014 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,9 +11,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
 #
-# Input Device Calibration File for the ace touch screen.
+# Input Device Calibration File for the lexikon touch screen.
 #
 # These calibration values are derived from empirical measurements
 # and may not be appropriate for use with other touch screens.
@@ -24,25 +25,15 @@
 touch.deviceType = touchScreen
 touch.orientationAware = 1
 
-# Touch Size
-touch.touchSize.calibration = pressure
-
-touch.toolSize.calibration = linear
-touch.toolSize.linearScale = 10
-touch.toolSize.linearBias = 160
-touch.toolSize.isSummed = 1
+# Size
+touch.size.calibration = area
+touch.size.scale = 12
+touch.size.bias = 0
+touch.size.isSummed = 0
 
 # Pressure
-# Driver reports signal strength as pressure.
-#
-# A normal thumb touch typically registers about 200 signal strength
-# units although we don't expect these values to be accurate.
 touch.pressure.calibration = amplitude
-touch.pressure.source = default
 touch.pressure.scale = 0.01
-
-# Size
-touch.size.calibration = normalized
 
 # Orientation
 touch.orientation.calibration = none
