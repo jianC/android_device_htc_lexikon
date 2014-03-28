@@ -38,10 +38,13 @@ PRODUCT_COPY_FILES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
+    device/htc/lexikon/prebuilt/system/usr/keychars/atmel-touhscreen.kcm:system/usr/keychars/atmel-touchscreen.kcm \
+    device/htc/lexikon/prebuilt/system/usr/keychars/synaptics-rmi-touhscreen.kcm:system/usr/keychars/synaptics-rmi-touchscreen.kcm \
     device/htc/lexikon/prebuilt/system/usr/keychars/lexikon-keypad.kcm:system/usr/keychars/lexikon-keypad.kcm \
     device/htc/lexikon/prebuilt/system/usr/keylayout/lexikon-keypad.kl:system/usr/keylayout/lexikon-keypad.kl \
     device/htc/lexikon/prebuilt/system/usr/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl\
     device/htc/lexikon/prebuilt/system/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+    device/htc/lexikon/prebuilt/system/usr/keylayout/atmel-touchscreen.kl:system/usr/keylayout/atmel-touchscreen.kl \
     device/htc/lexikon/prebuilt/system/usr/keylayout/synaptics-rmi-touchscreen.kl:system/usr/keylayout/synaptics-rmi-touchscreen.kl
 
 # Firmware
