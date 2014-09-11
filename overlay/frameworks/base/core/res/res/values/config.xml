@@ -104,6 +104,9 @@
         <item>0</item>
     </integer-array>
     
+    <!-- Minimum screen brightness allowed by the power manager. -->
+    <integer name="config_screenBrightnessDim">31</integer>    
+    
     <!-- Component name of the default wallpaper. This will be ImageWallpaper if not 
          specified -->
     <string name="default_wallpaper_component">@null</string>
@@ -186,9 +189,13 @@
     <!-- Disable lockscreen translucent decor by default -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
 
+    <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
+    <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
+
     <!-- Boolean indicating whether the wifi chipset has background scan support -->
     <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 
+    <!-- Enables or disables fading edges when marquee is enabled in TextView. -->
     <bool name="config_ui_enableFadingMarquee">false</bool>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
@@ -203,15 +210,13 @@
     If false, Content-disposition fragments are ignored -->
     <bool name="config_mms_content_disposition_support">false</bool>
 
-    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
-    <integer-array name="config_keyboardTapVibePattern">
-        <item>20</item>
-    </integer-array>
-
     <!-- Enables SIP on WIFI only -->
     <bool name="config_sip_wifi_only">true</bool>
 
     <!-- Device supports LED flashlight -->
     <bool name="config_enableTorch">true</bool>
+    
+    <!-- Indicate whether the SD card is accessible without removing the battery. -->
+    <bool name="config_batterySdCardAccessibility">true</bool>    
 
 </resources>
