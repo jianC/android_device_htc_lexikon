@@ -33,6 +33,7 @@ $(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
 
 # Input config files
 PRODUCT_COPY_FILES += \
+    device/htc/lexikon/prebuilt/system/usr/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
     device/htc/lexikon/prebuilt/system/usr/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc \
     device/htc/lexikon/prebuilt/system/usr/idc/lexikon-keypad.idc:system/usr/idc/lexikon-keypad.idc
 
