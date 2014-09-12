@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2011 The CyanogenMod Project
+# Copyright (C) 2014 The Evervolv Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,9 +17,6 @@
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 
-# qcom blobs
-$(call inherit-product, vendor/qcom/proprietary/qcom-vendor.mk)
-
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
@@ -28,16 +25,6 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/lexikon/overlay
 # adb hack
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/prebuilt/20fixup:system/etc/init.d/20fixup
-
-# Boot ramdisk setup
-PRODUCT_COPY_FILES += \
-    device/htc/lexikon/prebuilt/root/init.lexikon.rc:root/init.lexikon.rc \
-    device/htc/lexikon/prebuilt/root/init.htc7x30.usb.rc:root/init.htc7x30.usb.rc \
-    device/htc/lexikon/prebuilt/root/fstab.lexikon:root/fstab.lexikon \
-    device/htc/lexikon/prebuilt/root/ueventd.lexikon.rc:root/ueventd.lexikon.rc
-
-# call the proprietary setup
-$(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
 
 # Input config files
 PRODUCT_COPY_FILES += \
@@ -70,16 +57,17 @@ PRODUCT_COPY_FILES += \
 
 # Extra properties
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.oem.ecclist=112,911 \
     ro.ril.enable.a52=0 \
     ro.ril.enable.a53=1 \
     ro.ril.def.agps.mode=6 \
-    ro.config.low_ram=true
+    ro.cdma.home.operator.numeric = 310012 \
+    ro.cdma.home.operator.alpha = Verizon    
 
 # Misc
 PRODUCT_PACKAGES += \
     gps.lexikon
 
-$(call inherit-product-if-exists, vendor/htc/msm7x30-common/msm7x30-vendor.mk)
 $(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
 
 # media profiles and capabilities spec
@@ -91,3 +79,6 @@ $(call inherit-product, device/htc/lexikon/media_htcaudio.mk)
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+PRODUCT_NAME := htc_lexikon
+PRODUCT_DEVICE := lexikon

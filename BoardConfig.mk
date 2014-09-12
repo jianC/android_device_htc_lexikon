@@ -27,18 +27,17 @@
 # inherit from common msm7x30
 -include device/htc/msm7x30-common/BoardConfigCommon.mk
 
+# inherit from the proprietary version
+-include vendor/htc/lexikon/BoardConfigVendor.mk
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lexikon
 
 # Kernel
-BOARD_KERNEL_CMDLINE := no_console_suspend=1 androidboot.selinux=permissive
-BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE)
+BOARD_KERNEL_CMDLINE := no_console_suspend=1
 BOARD_KERNEL_BASE := 0x04a00000
 BOARD_KERNEL_PAGE_SIZE := 4096
-
-TARGET_KERNEL_SOURCE := kernel/htc/msm7x30-3.0
-TARGET_KERNEL_CONFIG := lexikon_cm11_defconfig
-ARM_EABI_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin
+TARGET_KERNEL_CONFIG := evervolv_lexikon_defconfig
 
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := lexikon
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
@@ -64,10 +63,13 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
 BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk1
 BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2
-BOARD_USES_MMCUTILS := true
-BOARD_HAS_NO_MISC_PARTITION := false
 
-# Recovery
-#BOARD_RECOVERY_SWIPE := true
+#TWRP / Recovery specific defines
+DEVICE_RESOLUTION := 480x800
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_INITRC := device/htc/lexikon/recovery/init.rc
+TW_NO_SCREEN_BLANK := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB = device/htc/lexikon/prebuilt/root/fstab.lexikon
+TARGET_RECOVERY_FSTAB = device/htc/lexikon/ramdisk/etc/fstab.lexikon
