@@ -17,6 +17,9 @@
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 
+# msm7x30 blobs
+$(call inherit-product, vendor/htc/msm7x30-common/msm7x30-vendor.mk)
+
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
