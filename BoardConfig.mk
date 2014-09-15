@@ -40,7 +40,7 @@ BOARD_KERNEL_PAGE_SIZE := 4096
 TARGET_KERNEL_CONFIG := evervolv_lexikon_defconfig
 
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := lexikon
-BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
+BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50001
 
 # cat /proc/emmc
 # dev:        size     erasesize name
