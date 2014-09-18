@@ -6,13 +6,11 @@
 /dev/block/platform/msm_sdcc.2/by-num/p21     /recovery    emmc    defaults                                                defaults
 /dev/block/platform/msm_sdcc.2/by-num/p22     /boot        emmc    defaults                                                defaults
 /dev/block/platform/msm_sdcc.2/by-num/p25     /system      ext4    ro,barrier=1                                            wait
-/dev/block/platform/msm_sdcc.2/by-num/p26     /data        ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic wait,check,encryptable=footer,length=-16384
-/dev/block/platform/msm_sdcc.2/by-num/p27     /cache       ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic wait,check
-/dev/block/platform/msm_sdcc.2/by-num/p29     /devlog      ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic wait,check
-
+/dev/block/platform/msm_sdcc.2/by-num/p26     /data        ext4    noatime,nosuid,nodev,data=ordered,noauto_da_alloc  wait
+/dev/block/platform/msm_sdcc.2/by-num/p27     /cache       ext4    noatime,nosuid,nodev,data=ordered,noauto_da_alloc  wait
+/dev/block/platform/msm_sdcc.2/by-num/p29     /devlog      ext4    noatime,nosuid,nodev,data=ordered,noauto_da_alloc  wait
 #sdcard
 /devices/platform/msm_sdcc.4/mmc_host/mmc2    auto  vfat  defaults  voldmanaged=sdcard0:auto,noemulatedsd
 
-#Swap (change as needed, this does nothing for now)
-/dev/block/zram0 none swap defaults zramsize=0
-
+#Swap 64MB
+/dev/block/zram0 none swap defaults zramsize=62914560
