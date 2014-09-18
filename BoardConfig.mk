@@ -41,7 +41,7 @@ TARGET_KERNEL_CONFIG := lexikon_cm11_defconfig
 ARM_EABI_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin
 
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := lexikon
-BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50001
+BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
 # cat /proc/emmc
 # dev:        size     erasesize name
