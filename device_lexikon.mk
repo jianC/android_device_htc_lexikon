@@ -73,7 +73,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.enable.a52=0 \
     ro.ril.enable.a53=1 \
     ro.ril.def.agps.mode=6 \
-    ro.config.low_ram=true
+    ro.config.low_ram=true \
+	ro.ksm.default=1
 
 # Misc
 PRODUCT_PACKAGES += \
