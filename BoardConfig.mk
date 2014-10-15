@@ -40,8 +40,7 @@ BOARD_KERNEL_BASE := 0x04a00000
 BOARD_KERNEL_PAGE_SIZE := 4096
 
 TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
-TARGET_KERNEL_CONFIG := evervolv_lexikon_defconfig
-ARM_EABI_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilt/linux-x86/toolchain/arm-linux-linaro-4.7/bin
+TARGET_KERNEL_CONFIG := lexikon_cm9_defconfig
 
 BOARD_USES_GENLOCK := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := lexikon
