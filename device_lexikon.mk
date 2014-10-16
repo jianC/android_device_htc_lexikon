@@ -25,7 +25,8 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/lexikon/overlay
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/prebuilt/root/init.lexikon.rc:root/init.lexikon.rc \
-    device/htc/lexikon/prebuilt/root/ueventd.lexikon.rc:root/ueventd.lexikon.rc
+    device/htc/lexikon/prebuilt/root/ueventd.lexikon.rc:root/ueventd.lexikon.rc \
+    device/htc/lexikon/prebuilt/root/init.lexikon.usb.rc:root/init.lexikon.usb.rc
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
