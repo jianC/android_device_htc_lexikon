@@ -82,9 +82,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.def.agps.mode=2 \
     ro.com.google.networklocation=1 \
     ro.com.google.gmsversion=2.2_r8 \
-    ro.setupwizard.enable_bypass=1 \
-    dalvik.vm.verify-bytecode = false \
-    dalvik.vm.dexopt-flags=v=n,o=v
+    ro.setupwizard.enable_bypass=1
 
 # MovieStudio
 PRODUCT_PACKAGES += \
