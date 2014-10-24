@@ -5,11 +5,8 @@
 debug.fb.rgb565 = 0
 ro.sf.lcd_density=240
 
-debug.sf.hw=1
-debug.composition.type=mdp
-debug.qctwa.statusbar=1
-ro.sf.compbypass.enable=0
 debug.qctwa.preservebuf=1
+debug.hwc.skipcomposition = 0
 
 # qcom build lub
 com.qc.hardware=true
