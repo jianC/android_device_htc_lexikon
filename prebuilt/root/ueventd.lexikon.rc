@@ -1,5 +1,6 @@
 /dev/system_bus_freq      0660    system    system
 /dev/cpu_dma_latency      0660    system    system
+/dev/diag                 0666   root       root
 
 #sensors
 /dev/akm8975_daemon       0640    compass   system
@@ -30,7 +31,7 @@
 
 # CDMA radio interface MUX
 /dev/ppp                  0660   radio      vpn
-/dev/tun                  0640   vpn        vpn
+/dev/tun                  0660   system     vpn
 
 #camera
 /dev/gemini0            0660    system     camera
