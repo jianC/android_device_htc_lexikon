@@ -25,10 +25,6 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/lexikon/overlay
 
-# adb hack
-PRODUCT_COPY_FILES += \
-    device/htc/lexikon/prebuilt/20fixup:system/etc/init.d/20fixup
-
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
     device/htc/lexikon/prebuilt/root/init.lexikon.rc:root/init.lexikon.rc \
