@@ -13,17 +13,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 
-# msm7x30 blobs
-$(call inherit-product, vendor/htc/msm7x30-common/msm7x30-vendor.mk)
+# HTC Audio
+$(call inherit-product, device/htc/lexikon/media_a1026.mk)
+$(call inherit-product, device/htc/lexikon/media_htcaudio.mk)
+
+DEVICE_PACKAGE_OVERLAYS += device/htc/lexikon/overlay
+
+# call the proprietary setup
+$(call inherit-product, vendor/htc/lexikon/lexikon-vendor.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
-
-DEVICE_PACKAGE_OVERLAYS += device/htc/lexikon/overlay
 
 # Boot ramdisk setup
 PRODUCT_COPY_FILES += \
@@ -74,17 +80,37 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Misc
 PRODUCT_PACKAGES += \
-    gps.lexikon
+	libbt-vendor \
+	lights.spade \
+	sensors.spade \
+    gps.lexikon \
+    librpc
 
-$(call inherit-product-if-exists, vendor/htc/msm7x30-common/msm7x30-vendor.mk)
-$(call inherit-product-if-exists, vendor/htc/lexikon/lexikon-vendor.mk)
+# Extra properties
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.setupwizard.enable_bypass=1
 
-# media profiles and capabilities spec
-$(call inherit-product, device/htc/lexikon/media_a1026.mk)
+# Override /proc/sys/vm/dirty_ratio on UMS
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.vold.umsdirtyratio=20
 
-# htc audio settings
-$(call inherit-product, device/htc/lexikon/media_htcaudio.mk)
+# Use cache partition for system app dexopt
+PRODUCT_PROPERTY_OVERRIDES += \
+	dalvik.vm.dexopt-data-only=0
+
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_LOCALES += en_US
+
+ifeq ($(DISABLE_SECURITY),true)
+# Disable ADB authentication and use root shell
+ADDITIONAL_DEFAULT_PROPERTIES += \
+	ro.adb.secure=0 \
+	ro.secure=0
+endif
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# lower the increment
+ADDITIONAL_BUILD_PROPERTIES += dalvik.vm.heapgrowthlimit=36m
